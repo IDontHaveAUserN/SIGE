@@ -1,0 +1,84 @@
+<div class="w-full max-w-3xl glass-card rounded-[24px] overflow-hidden">
+    <div class="p-8 md:p-12">
+        <form class="space-y-8" onsubmit="event.preventDefault();">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Region Name -->
+                <div class="col-span-2 md:col-span-2">
+                    <label class="block text-label-md text-on-surface-variant mb-2">Nome da Região</label>
+                    <input class="w-full px-4 py-4 rounded-[16px] bg-surface-container-low border-transparent border-2 focus:border-primary-container focus:ring-0 focus:bg-white transition-all text-body-md placeholder:text-outline-variant" placeholder="Ex: Região Metropolitana Norte, Região Costeira Sul" type="text"/>
+                </div>
+                
+                <!-- Code -->
+                <div>
+                    <label class="block text-label-md text-on-surface-variant mb-2">Código</label>
+                    <input class="w-full px-4 py-4 rounded-[16px] bg-surface-container-low border-transparent border-2 focus:border-primary-container focus:ring-0 focus:bg-white transition-all text-body-md placeholder:text-outline-variant" placeholder="Ex: N-MET, S-COA" type="text"/>
+                </div>
+                
+                <!-- Acronym -->
+                <div>
+                    <label class="block text-label-md text-on-surface-variant mb-2">Sigla</label>
+                    <input class="w-full px-4 py-4 rounded-[16px] bg-surface-container-low border-transparent border-2 focus:border-primary-container focus:ring-0 focus:bg-white transition-all text-body-md placeholder:text-outline-variant" placeholder="Ex: NM, SC" type="text"/>
+                </div>
+                
+                <!-- Start Date -->
+                <div>
+                    <label class="block text-label-md text-on-surface-variant mb-2">Data de Criação</label>
+                    <input class="w-full px-4 py-4 rounded-[16px] bg-surface-container-low border-transparent border-2 focus:border-primary-container focus:ring-0 focus:bg-white transition-all text-body-md" type="date"/>
+                </div>
+                
+                <!-- Status -->
+                <div>
+                    <label class="block text-label-md text-on-surface-variant mb-2">Status</label>
+                    <select class="w-full px-4 py-4 rounded-[16px] bg-surface-container-low border-transparent border-2 focus:border-primary-container focus:ring-0 focus:bg-white transition-all text-body-md">
+                        <option value="active">Ativo</option>
+                        <option value="inactive">Inativo</option>
+                        <option value="draft">Rascunho</option>
+                    </select>
+                </div>
+                
+                <!-- Number of Sectors -->
+                <div>
+                    <label class="block text-label-md text-on-surface-variant mb-2">Número de Setores</label>
+                    <div class="relative">
+                        <input class="w-full px-4 py-4 rounded-[16px] bg-surface-container-low border-transparent border-2 focus:border-primary-container focus:ring-0 focus:bg-white transition-all text-body-md" max="50" min="1" type="number" value="1"/>
+                        <span class="absolute right-4 top-1/2 -translate-y-1/2 text-on-surface-variant font-body-sm">Setores</span>
+                    </div>
+                </div>
+                
+                <!-- Estimated Schools -->
+                <div>
+                    <label class="block text-label-md text-on-surface-variant mb-2">Escolas Estimadas</label>
+                    <div class="relative">
+                        <input class="w-full px-4 py-4 rounded-[16px] bg-surface-container-low border-transparent border-2 focus:border-primary-container focus:ring-0 focus:bg-white transition-all text-body-md" max="200" min="0" type="number" value="0"/>
+                        <span class="absolute right-4 top-1/2 -translate-y-1/2 text-on-surface-variant font-body-sm">Escolas</span>
+                    </div>
+                </div>
+                
+                <!-- Description -->
+                <div class="col-span-2">
+                    <label class="block text-label-md text-on-surface-variant mb-2">Descrição</label>
+                    <textarea class="w-full px-4 py-4 rounded-[16px] bg-surface-container-low border-transparent border-2 focus:border-primary-container focus:ring-0 focus:bg-white transition-all text-body-md resize-none placeholder:text-outline-variant" placeholder="Descreva brevemente os objetivos, localização geográfica e características desta região educacional..." rows="4"></textarea>
+                </div>
+                
+                <!-- Geographic Notes -->
+                <div class="col-span-2">
+                    <label class="block text-label-md text-on-surface-variant mb-2">Notas Geográficas</label>
+                    <textarea class="w-full px-4 py-4 rounded-[16px] bg-surface-container-low border-transparent border-2 focus:border-primary-container focus:ring-0 focus:bg-white transition-all text-body-md resize-none placeholder:text-outline-variant" placeholder="Informações adicionais sobre localização, limites geográficos, municípios abrangidos..." rows="3"></textarea>
+                </div>
+            </div>
+            
+            <!-- Divider -->
+            <div class="h-[1px] bg-outline-variant w-full opacity-30"></div>
+            
+            <!-- Form Actions -->
+            <div class="flex flex-col md:flex-row items-center justify-end gap-4 pt-4">
+                <a href="/ME-GB/pages/cycles-list.html" class="px-4 py-2 bg-surface-container-lowest border border-outline-tertiary rounded-lg font-label-sm text-label-sm text-secondary hover:bg-surface-container-high transition-all">
+                    Cancelar
+                </a>
+                <button class="px-4 py-2 bg-tertiary text-on-primary rounded-lg font-label-sm text-label-sm hover:opacity-90 transition-all" type="submit">
+                    Salvar Região
+                </button>
+            </div>
+        </form>
+    </div>
+</div>

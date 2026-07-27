@@ -1,0 +1,36 @@
+<div class="p-container-padding-desktop max-w-[1440px] mx-auto w-full space-y-section-gap">
+    <!-- 1. Overview Statistics -->
+    <div id="stats-container"></div>
+    
+    <!-- 2. Hierarchical View & 3. Academic Structure -->
+    <div id="hierarchy-container"></div>
+    
+    <!-- 4. Student List -->
+    <div id="student-table-container"></div>
+</div>
+
+<script>
+// Load sections
+document.addEventListener('DOMContentLoaded', function() {
+    // Load Stats
+    fetch('sections/stats.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('stats-container').innerHTML = data;
+        });
+    
+    // Load Hierarchy
+    fetch('sections/hierarchy.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('hierarchy-container').innerHTML = data;
+        });
+    
+    // Load Student Table
+    fetch('sections/student-table.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('student-table-container').innerHTML = data;
+        });
+});
+</script>

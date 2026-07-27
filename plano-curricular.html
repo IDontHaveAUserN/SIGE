@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>ME-GB | Plano Curricular</title>
+    
+    <!-- Google Fonts: Manrope -->
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+    <!-- Material Symbols -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "secondary-fixed": "#e3e2e0",
+                        "on-error": "#ffffff",
+                        "surface-container": "#eeedf2",
+                        "inverse-primary": "#ecbaba",
+                        "on-tertiary": "#ffffff",
+                        "on-secondary": "#ffffff",
+                        "surface-bright": "#faf9fe",
+                        "primary-fixed-dim": "#ecbaba",
+                        "tertiary-fixed-dim": "#c0c1ff",
+                        "tertiary-fixed": "#e1e0ff",
+                        "outline": "#827473",
+                        "outline-variant": "#d4c2c2",
+                        "on-error-container": "#93000a",
+                        "secondary-fixed-dim": "#c7c6c4",
+                        "surface": "#faf9fe",
+                        "on-primary": "#ffffff",
+                        "background": "#faf9fe",
+                        "secondary-container": "#e0e0dd",
+                        "on-tertiary-container": "#4243cf",
+                        "on-secondary-fixed": "#1a1c1a",
+                        "surface-container-highest": "#e3e2e7",
+                        "on-primary-fixed-variant": "#613d3e",
+                        "on-tertiary-fixed-variant": "#2f2ebe",
+                        "tertiary-container": "#cacaff",
+                        "error-container": "#ffdad6",
+                        "surface-dim": "#dad9de",
+                        "surface-container-high": "#e9e7ed",
+                        "primary-fixed": "#ffdad9",
+                        "on-surface-variant": "#504444",
+                        "on-tertiary-fixed": "#07006c",
+                        "surface-container-low": "#f4f3f8",
+                        "on-background": "#1a1b1f",
+                        "inverse-surface": "#2f3034",
+                        "on-primary-fixed": "#2f1314",
+                        "inverse-on-surface": "#f1f0f5",
+                        "error": "#ba1a1a",
+                        "surface-variant": "#e3e2e7",
+                        "primary-container": "#f4c2c2",
+                        "on-secondary-fixed-variant": "#464745",
+                        "secondary": "#5e5f5d",
+                        "primary": "#7b5455",
+                        "on-surface": "#1a1b1f",
+                        "on-primary-container": "#734e4e",
+                        "tertiary": "#494bd6",
+                        "on-secondary-container": "#626361",
+                        "surface-tint": "#7b5455",
+                        "surface-container-lowest": "#ffffff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "gutter": "24px",
+                        "section-gap": "48px",
+                        "base": "8px",
+                        "container-padding-mobile": "16px",
+                        "container-padding-desktop": "32px"
+                    },
+                    "fontFamily": {
+                        "headline-sm": ["Manrope"],
+                        "body-md": ["Manrope"],
+                        "label-sm": ["Manrope"],
+                        "headline-lg-mobile": ["Manrope"],
+                        "body-sm": ["Manrope"],
+                        "body-lg": ["Manrope"],
+                        "label-md": ["Manrope"],
+                        "headline-md": ["Manrope"],
+                        "headline-lg": ["Manrope"]
+                    },
+                    "fontSize": {
+                        "headline-sm": ["20px", {"lineHeight": "28px", "fontWeight": "600"}],
+                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                        "label-sm": ["12px", {"lineHeight": "16px", "fontWeight": "500"}],
+                        "headline-lg-mobile": ["24px", {"lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                        "body-sm": ["14px", {"lineHeight": "20px", "fontWeight": "400"}],
+                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                        "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                        "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                        "headline-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700"}]
+                    }
+                },
+            },
+        }
+    </script>
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-background text-on-background min-h-screen">
+    <!-- SideNavBar Container -->
+    <div id="sidebar-container"></div>
+    
+    <!-- Main Content Wrapper -->
+    <main class="ml-[280px] min-h-screen flex flex-col">
+        <!-- TopNavBar Container -->
+        <div id="topnav-container"></div>
+        
+        <!-- Plano Curricular Content -->
+        <div class="p-container-padding-desktop max-w-[1440px] mx-auto w-full space-y-section-gap pt-24">
+            <!-- Header -->
+            <div id="plano-curricular-header-container"></div>
+            
+            <!-- Stats -->
+            <div id="plano-curricular-stats-container"></div>
+            
+            <!-- Table -->
+            <div id="plano-curricular-table-container"></div>
+            
+            <!-- Tips -->
+            <div id="plano-curricular-tips-container"></div>
+        </div>
+    </main>
+    
+    <!-- Delete Confirmation Modal -->
+    <div id="deleteModal" class="fixed inset-0 bg-black/50 backdrop-blur-sm z-50 hidden items-center justify-center">
+        <div class="bg-white rounded-[24px] p-8 max-w-md w-full mx-4 card-shadow">
+            <div class="flex items-center justify-center w-16 h-16 rounded-full bg-error-container/20 mx-auto mb-4">
+                <span class="material-symbols-outlined text-error text-4xl">delete_forever</span>
+            </div>
+            <h3 class="text-headline-sm font-headline-sm text-on-surface text-center mb-2">Confirmar Eliminação</h3>
+            <p class="text-body-md text-on-surface-variant text-center mb-6">Tem a certeza que deseja eliminar a disciplina <span id="deleteDisciplinaName" class="font-bold text-primary"></span>? Esta ação não pode ser desfeita.</p>
+            <div class="flex gap-3">
+                <button onclick="closeDeleteModal()" class="flex-1 px-4 py-3 rounded-full border border-secondary text-secondary font-bold hover:bg-surface-container-low transition-all">
+                    Cancelar
+                </button>
+                <button onclick="confirmDelete()" class="flex-1 px-4 py-3 rounded-full bg-error text-white font-bold hover:bg-error/90 transition-all shadow-sm">
+                    Eliminar
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+    <script>
+        // Load plano-curricular page content
+        document.addEventListener('DOMContentLoaded', function() {
+            loadPlanoCurricularContent();
+        });
+        
+        // Delete functionality
+        let deleteId = null;
+        
+        function openDeleteModal(id, name) {
+            deleteId = id;
+            document.getElementById('deleteDisciplinaName').textContent = name;
+            document.getElementById('deleteModal').classList.remove('hidden');
+            document.getElementById('deleteModal').classList.add('flex');
+        }
+        
+        function closeDeleteModal() {
+            document.getElementById('deleteModal').classList.add('hidden');
+            document.getElementById('deleteModal').classList.remove('flex');
+            deleteId = null;
+        }
+        
+        function confirmDelete() {
+            console.log('Deleting subject with ID:', deleteId);
+            alert('Disciplina eliminada com sucesso!');
+            closeDeleteModal();
+        }
+        
+        document.getElementById('deleteModal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeDeleteModal();
+            }
+        });
+    </script>
+</body>
+</html>

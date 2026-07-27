@@ -1,0 +1,144 @@
+<aside class="fixed left-0 top-0 h-full w-[288px] z-50 flex flex-col py-6 overflow-y-auto scrollbar" id="sidebar" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+
+  <!-- Brand -->
+  <div class="px-6 mb-7 flex items-start justify-between">
+    <div class="flex items-center gap-3">
+      <div class="w-11 h-11 rounded-lg flex items-center justify-center shrink-0 shadow-[0_2px_10px_rgba(200,155,60,0.25)]" style="background: radial-gradient(circle at 10% 20%, rgb(186, 190, 245) 0%, rgb(192, 192, 245) 33.1%, rgb(218, 203, 246) 90%);">
+        <span class="material-symbols-outlined fill text-[22px] text-navy">account_balance</span>
+      </div>
+      <div class="leading-tight">
+        <h1 class="font-display font-semibold text-[19px] tracking-tight" style="background: radial-gradient(circle at 10% 20%, rgb(186, 190, 245) 0%, rgb(192, 192, 245) 33.1%, rgb(218, 203, 246) 90%); -webkit-background-clip: text; background-clip: text; color: transparent;">SIGE&nbsp;·&nbsp;GB</h1>
+        <p class="font-mono text-[10.5px] uppercase tracking-[0.12em] text-white/45 mt-0.5">Direção Geral · Ens. Básico &amp; Sec.</p>
+      </div>
+    </div>
+    <button class="lg:hidden text-white/60 hover:text-white p-1 -mt-1 -mr-1" id="sidebar-close">
+      <span class="material-symbols-outlined">close</span>
+    </button>
+  </div>
+
+  <!-- Dashboard (standalone) -->
+  <div class="px-4 mb-5">
+    <a href="/ME-GB/index.html" data-nav class="nav-link is-active flex items-center gap-3 px-4 py-2.5 rounded-lg font-semibold text-[14px] text-navy transition-colors" style="background: radial-gradient(circle at 10% 20%, rgb(186, 190, 245) 0%, rgb(192, 192, 245) 33.1%, rgb(218, 203, 246) 90%);">
+      <span class="material-symbols-outlined fill text-[20px]">dashboard</span>
+      <span>Dashboard</span>
+    </a>
+  </div>
+
+  <nav class="flex-1 px-4 space-y-1">
+
+    <!-- Group 01 — Estrutura -->
+    <div class="nav-group">
+      <button class="group-toggle w-full flex items-center gap-2.5 px-2 py-2 text-left" data-target="g1">
+        <span class="font-mono text-[11px] text-gold/80 tabular-nums">01</span>
+        <span class="font-body text-[11px] font-bold uppercase tracking-[0.14em] text-white/45 flex-1">Estrutura</span>
+        <span class="material-symbols-outlined group-chevron text-white/35 text-[18px]">expand_more</span>
+      </button>
+      <div class="group-body" id="g1">
+        <div class="space-y-0.5 pb-2">
+          <a href="/ME-GB/regiao.html" data-nav class="nav-link flex items-center gap-3 pl-8 pr-3 py-2 rounded-lg font-medium text-[14px] text-white/70 hover:bg-white/[0.06] hover:text-white transition-colors">
+            <span class="material-symbols-outlined text-[19px]">public</span><span>Regiões</span>
+          </a>
+          <a href="/ME-GB/setor.html" data-nav class="nav-link flex items-center gap-3 pl-8 pr-3 py-2 rounded-lg font-medium text-[14px] text-white/70 hover:bg-white/[0.06] hover:text-white transition-colors">
+            <span class="material-symbols-outlined text-[19px]">account_tree</span><span>Setores</span>
+          </a>
+          <a href="/ME-GB/escola.html" data-nav class="nav-link flex items-center gap-3 pl-8 pr-3 py-2 rounded-lg font-medium text-[14px] text-white/70 hover:bg-white/[0.06] hover:text-white transition-colors">
+            <span class="material-symbols-outlined text-[19px]">apartment</span><span>Escolas</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Group 02 — Organização Académica -->
+    <div class="nav-group">
+      <button class="group-toggle w-full flex items-center gap-2.5 px-2 py-2 text-left" data-target="g2">
+        <span class="font-mono text-[11px] text-gold/80 tabular-nums">02</span>
+        <span class="font-body text-[11px] font-bold uppercase tracking-[0.14em] text-white/45 flex-1">Organização Académica</span>
+        <span class="material-symbols-outlined group-chevron text-white/35 text-[18px]">expand_more</span>
+      </button>
+      <div class="group-body" id="g2">
+        <div class="space-y-0.5 pb-2">
+          <a href="/ME-GB/nivel-ensino.html" data-nav class="nav-link flex items-center gap-3 pl-8 pr-3 py-2 rounded-lg font-medium text-[14px] text-white/70 hover:bg-white/[0.06] hover:text-white transition-colors">
+            <span class="material-symbols-outlined text-[19px]">layers</span><span>Nível de Ensino</span>
+          </a>
+          <a href="/ME-GB/ciclos.html" data-nav class="nav-link flex items-center gap-3 pl-8 pr-3 py-2 rounded-lg font-medium text-[14px] text-white/70 hover:bg-white/[0.06] hover:text-white transition-colors">
+            <span class="material-symbols-outlined text-[19px]">autorenew</span><span>Ciclos</span>
+          </a>
+          <a href="/ME-GB/nivel-escolaridade.html" data-nav class="nav-link flex items-center gap-3 pl-8 pr-3 py-2 rounded-lg font-medium text-[14px] text-white/70 hover:bg-white/[0.06] hover:text-white transition-colors">
+            <span class="material-symbols-outlined text-[19px]">stairs</span><span>Nível de Escolaridade</span>
+          </a>
+          <a href="/ME-GB/turma.html" data-nav class="nav-link flex items-center gap-3 pl-8 pr-3 py-2 rounded-lg font-medium text-[14px] text-white/70 hover:bg-white/[0.06] hover:text-white transition-colors">
+            <span class="material-symbols-outlined text-[19px]">groups</span><span>Turma</span>
+          </a>
+          <a href="/ME-GB/plano-curricular.html" data-nav class="nav-link flex items-center gap-3 pl-8 pr-3 py-2 rounded-lg font-medium text-[14px] text-white/70 hover:bg-white/[0.06] hover:text-white transition-colors">
+            <span class="material-symbols-outlined text-[19px]">menu_book</span><span>Plano Curricular</span>
+          </a>
+          <a href="/ME-GB/ano-letivo.html" data-nav class="nav-link flex items-center gap-3 pl-8 pr-3 py-2 rounded-lg font-medium text-[14px] text-white/70 hover:bg-white/[0.06] hover:text-white transition-colors">
+            <span class="material-symbols-outlined text-[19px]">calendar_today</span><span>Ano Letivo</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Group 03 — Registos -->
+    <div class="nav-group">
+      <button class="group-toggle w-full flex items-center gap-2.5 px-2 py-2 text-left" data-target="g3">
+        <span class="font-mono text-[11px] text-gold/80 tabular-nums">03</span>
+        <span class="font-body text-[11px] font-bold uppercase tracking-[0.14em] text-white/45 flex-1">Registos</span>
+        <span class="material-symbols-outlined group-chevron text-white/35 text-[18px]">expand_more</span>
+      </button>
+      <div class="group-body" id="g3">
+        <div class="space-y-0.5 pb-2">
+          <a href="/ME-GB/aluno.html" data-nav class="nav-link flex items-center gap-3 pl-8 pr-3 py-2 rounded-lg font-medium text-[14px] text-white/70 hover:bg-white/[0.06] hover:text-white transition-colors">
+            <span class="material-symbols-outlined text-[19px]">person</span><span>Aluno</span>
+          </a>
+          <a href="/ME-GB/livro.html" data-nav class="nav-link flex items-center gap-3 pl-8 pr-3 py-2 rounded-lg font-medium text-[14px] text-white/70 hover:bg-white/[0.06] hover:text-white transition-colors">
+            <span class="material-symbols-outlined text-[19px]">book_2</span><span>Livro</span>
+          </a>
+          <a href="/ME-GB//folha.html" data-nav class="nav-link flex items-center gap-3 pl-8 pr-3 py-2 rounded-lg font-medium text-[14px] text-white/70 hover:bg-white/[0.06] hover:text-white transition-colors">
+            <span class="material-symbols-outlined text-[19px]">description</span><span>Folha</span>
+          </a>
+          <a href="/ME-GB/tipo-documento.html" data-nav class="nav-link flex items-center gap-3 pl-8 pr-3 py-2 rounded-lg font-medium text-[14px] text-white/70 hover:bg-white/[0.06] hover:text-white transition-colors">
+            <span class="material-symbols-outlined text-[19px]">fact_check</span><span>Tipo de Documento</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="h-px bg-white/10 my-3 mx-2"></div>
+
+    <!-- Group 04 — Administração -->
+    <div class="nav-group">
+      <button class="group-toggle w-full flex items-center gap-2.5 px-2 py-2 text-left" data-target="g4">
+        <span class="font-mono text-[11px] text-brick tabular-nums">04</span>
+        <span class="font-body text-[11px] font-bold uppercase tracking-[0.14em] text-white/45 flex-1">Administração</span>
+        <span class="material-symbols-outlined group-chevron text-white/35 text-[18px]">expand_more</span>
+      </button>
+      <div class="group-body" id="g4">
+        <div class="space-y-0.5 pb-2">
+          <a href="#" data-nav class="nav-link flex items-center gap-3 pl-8 pr-3 py-2 rounded-lg font-medium text-[14px] text-white/70 hover:bg-white/[0.06] hover:text-white transition-colors">
+            <span class="material-symbols-outlined text-[19px]">manage_accounts</span><span>Gestão de Utilizador</span>
+          </a>
+          <a href="#" data-nav class="nav-link flex items-center gap-3 pl-8 pr-3 py-2 rounded-lg font-medium text-[14px] text-white/70 hover:bg-white/[0.06] hover:text-white transition-colors">
+            <span class="material-symbols-outlined text-[19px]">domain</span><span>Gestão de Escolas</span>
+          </a>
+          <a href="#" data-nav class="nav-link flex items-center gap-3 pl-8 pr-3 py-2 rounded-lg font-medium text-[14px] text-white/70 hover:bg-white/[0.06] hover:text-white transition-colors">
+            <span class="material-symbols-outlined text-[19px]">grading</span><span>Gestão de Notas</span>
+          </a>
+          <a href="#" data-nav class="nav-link flex items-center gap-3 pl-8 pr-3 py-2 rounded-lg font-medium text-[14px] text-white/70 hover:bg-white/[0.06] hover:text-white transition-colors">
+            <span class="material-symbols-outlined text-[19px]">assignment</span><span>Gestão de Planos Curriculares</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Footer -->
+  <div class="px-4 mt-6 pt-4 border-t border-white/10 space-y-1">
+    <a href="#" class="flex items-center gap-3 px-4 py-2.5 rounded-lg font-medium text-[14px] text-white/60 hover:bg-white/[0.06] hover:text-white transition-colors">
+      <span class="material-symbols-outlined text-[19px]">help</span><span>Centro de Ajuda</span>
+    </a>
+    <a href="#" class="flex items-center gap-3 px-4 py-2.5 rounded-lg font-medium text-[14px] text-brick/90 hover:bg-brick/10 transition-colors">
+      <span class="material-symbols-outlined text-[19px]">logout</span><span>Terminar Sessão</span>
+    </a>
+  </div>
+</aside>

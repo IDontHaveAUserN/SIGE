@@ -1,0 +1,122 @@
+<section class="space-y-6 pb-12">
+    <div class="flex items-center justify-between">
+        <div>
+            <h3 class="font-headline-sm text-headline-sm text-on-surface">Matrículas Recentes de Alunos</h3>
+            <p class="font-body-sm text-body-sm text-secondary">Active school year: 2023 - 2024</p>
+        </div>
+        <div class="flex items-center gap-3">
+            <div class="flex items-center bg-surface-container-low rounded-lg p-1">
+                <button class="px-4 py-1.5 rounded-md bg-surface-container-lowest shadow-sm text-on-surface font-label-sm">Active</button>
+                <button class="px-4 py-1.5 rounded-md text-secondary font-label-sm">Pending</button>
+                <button class="px-4 py-1.5 rounded-md text-secondary font-label-sm">Graduated</button>
+            </div>
+            <button class="w-10 h-10 flex items-center justify-center bg-surface-container-low rounded-lg text-secondary">
+                <span class="material-symbols-outlined">filter_alt</span>
+            </button>
+        </div>
+    </div>
+    <div class="bg-surface-container-lowest rounded-[24px] card-shadow border border-[#f5efef] overflow-hidden">
+        <table class="w-full text-left">
+            <thead class="bg-surface-container-low border-b border-outline-variant/30">
+                <tr>
+                    <th class="px-6 py-4 font-label-md text-label-md text-secondary">Student Name</th>
+                    <th class="px-6 py-4 font-label-md text-label-md text-secondary">ID Number</th>
+                    <th class="px-6 py-4 font-label-md text-label-md text-secondary">Cycle / Level</th>
+                    <th class="px-6 py-4 font-label-md text-label-md text-secondary">Class</th>
+                    <th class="px-6 py-4 font-label-md text-label-md text-secondary">Status</th>
+                    <th class="px-6 py-4"></th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-outline-variant/20">
+                <!-- Student Row 1 -->
+                <tr class="hover:bg-surface-container-low/50 transition-colors">
+                    <td class="px-6 py-4">
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-full bg-secondary-container/30 flex items-center justify-center font-bold text-secondary">JD</div>
+                            <div>
+                                <p class="font-label-md text-label-md text-on-surface">Jane Doe</p>
+                                <p class="font-body-sm text-body-sm text-secondary">j.doe@school.edu</p>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="px-6 py-4 font-body-md text-body-md text-on-surface">#2024-00124</td>
+                    <td class="px-6 py-4">
+                        <span class="font-label-sm text-label-sm px-2 py-1 bg-primary-container/20 text-on-primary-container rounded-full">Primary / Level 2</span>
+                    </td>
+                    <td class="px-6 py-4 font-body-md text-body-md text-on-surface">Class 2-B</td>
+                    <td class="px-6 py-4">
+                        <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#E8F5E9] text-[#2E7D32] font-label-sm text-label-sm">
+                            <span class="w-1.5 h-1.5 rounded-full bg-[#2E7D32]"></span> Present
+                        </span>
+                    </td>
+                    <td class="px-6 py-4 text-right">
+                        <button class="p-2 text-secondary hover:bg-surface-container-high rounded-full">
+                            <span class="material-symbols-outlined">edit</span>
+                        </button>
+                    </td>
+                </tr>
+                <!-- Student Row 2 -->
+                <tr class="hover:bg-surface-container-low/50 transition-colors">
+                    <td class="px-6 py-4">
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-full bg-primary-container/30 flex items-center justify-center font-bold text-primary">MC</div>
+                            <div>
+                                <p class="font-label-md text-label-md text-on-surface">Marcus Chen</p>
+                                <p class="font-body-sm text-body-sm text-secondary">m.chen@school.edu</p>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="px-6 py-4 font-body-md text-body-md text-on-surface">#2024-00156</td>
+                    <td class="px-6 py-4">
+                        <span class="font-label-sm text-label-sm px-2 py-1 bg-tertiary-container/20 text-on-tertiary-container rounded-full">Secondary / Grade 10</span>
+                    </td>
+                    <td class="px-6 py-4 font-body-md text-body-md text-on-surface">10-Alpha</td>
+                    <td class="px-6 py-4">
+                        <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#FFF3E0] text-[#E65100] font-label-sm text-label-sm">
+                            <span class="w-1.5 h-1.5 rounded-full bg-[#E65100]"></span> Late
+                        </span>
+                    </td>
+                    <td class="px-6 py-4 text-right">
+                        <button class="p-2 text-secondary hover:bg-surface-container-high rounded-full">
+                            <span class="material-symbols-outlined">edit</span>
+                        </button>
+                    </td>
+                </tr>
+                <!-- Student Row 3 -->
+                <tr class="hover:bg-surface-container-low/50 transition-colors">
+                    <td class="px-6 py-4">
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-full bg-tertiary-container/30 flex items-center justify-center font-bold text-tertiary">SA</div>
+                            <div>
+                                <p class="font-label-md text-label-md text-on-surface">Sarah Al-Fayed</p>
+                                <p class="font-body-sm text-body-sm text-secondary">s.al@school.edu</p>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="px-6 py-4 font-body-md text-body-md text-on-surface">#2024-00189</td>
+                    <td class="px-6 py-4">
+                        <span class="font-label-sm text-label-sm px-2 py-1 bg-primary-container/20 text-on-primary-container rounded-full">Primary / Level 3</span>
+                    </td>
+                    <td class="px-6 py-4 font-body-md text-body-md text-on-surface">Class 3-A</td>
+                    <td class="px-6 py-4">
+                        <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#E8F5E9] text-[#2E7D32] font-label-sm text-label-sm">
+                            <span class="w-1.5 h-1.5 rounded-full bg-[#2E7D32]"></span> Present
+                        </span>
+                    </td>
+                    <td class="px-6 py-4 text-right">
+                        <button class="p-2 text-secondary hover:bg-surface-container-high rounded-full">
+                            <span class="material-symbols-outlined">edit</span>
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="p-6 bg-surface-container-low/30 flex items-center justify-between">
+            <p class="font-body-sm text-body-sm text-secondary">Showing 3 of 12,482 students</p>
+            <div class="flex gap-2">
+                <button class="px-4 py-2 bg-surface-container-lowest border border-outline-tertiary rounded-lg font-label-sm text-label-sm text-secondary hover:bg-surface-container-high transition-all">Previous</button>
+                <button class="px-4 py-2 bg-tertiary text-on-primary rounded-lg font-label-sm text-label-sm hover:opacity-90 transition-all">Next</button>
+            </div>
+        </div>
+    </div>
+</section>

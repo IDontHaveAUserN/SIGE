@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Editar Ciclo | ME-GB</title>
+    
+    <!-- Google Fonts: Manrope -->
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+    <!-- Material Symbols -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "secondary-fixed": "#e3e2e0",
+                        "on-error": "#ffffff",
+                        "surface-container": "#eeedf2",
+                        "inverse-primary": "#ecbaba",
+                        "on-tertiary": "#ffffff",
+                        "on-secondary": "#ffffff",
+                        "surface-bright": "#faf9fe",
+                        "primary-fixed-dim": "#ecbaba",
+                        "tertiary-fixed-dim": "#c0c1ff",
+                        "tertiary-fixed": "#e1e0ff",
+                        "outline": "#827473",
+                        "outline-variant": "#d4c2c2",
+                        "on-error-container": "#93000a",
+                        "secondary-fixed-dim": "#c7c6c4",
+                        "surface": "#faf9fe",
+                        "on-primary": "#ffffff",
+                        "background": "#faf9fe",
+                        "secondary-container": "#e0e0dd",
+                        "on-tertiary-container": "#4243cf",
+                        "on-secondary-fixed": "#1a1c1a",
+                        "surface-container-highest": "#e3e2e7",
+                        "on-primary-fixed-variant": "#613d3e",
+                        "on-tertiary-fixed-variant": "#2f2ebe",
+                        "tertiary-container": "#cacaff",
+                        "error-container": "#ffdad6",
+                        "surface-dim": "#dad9de",
+                        "surface-container-high": "#e9e7ed",
+                        "primary-fixed": "#ffdad9",
+                        "on-surface-variant": "#504444",
+                        "on-tertiary-fixed": "#07006c",
+                        "surface-container-low": "#f4f3f8",
+                        "on-background": "#1a1b1f",
+                        "inverse-surface": "#2f3034",
+                        "on-primary-fixed": "#2f1314",
+                        "inverse-on-surface": "#f1f0f5",
+                        "error": "#ba1a1a",
+                        "surface-variant": "#e3e2e7",
+                        "primary-container": "#f4c2c2",
+                        "on-secondary-fixed-variant": "#464745",
+                        "secondary": "#5e5f5d",
+                        "primary": "#7b5455",
+                        "on-surface": "#1a1b1f",
+                        "on-primary-container": "#734e4e",
+                        "tertiary": "#494bd6",
+                        "on-secondary-container": "#626361",
+                        "surface-tint": "#7b5455",
+                        "surface-container-lowest": "#ffffff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "gutter": "24px",
+                        "section-gap": "48px",
+                        "base": "8px",
+                        "container-padding-mobile": "16px",
+                        "container-padding-desktop": "32px"
+                    },
+                    "fontFamily": {
+                        "headline-sm": ["Manrope"],
+                        "body-md": ["Manrope"],
+                        "label-sm": ["Manrope"],
+                        "headline-lg-mobile": ["Manrope"],
+                        "body-sm": ["Manrope"],
+                        "body-lg": ["Manrope"],
+                        "label-md": ["Manrope"],
+                        "headline-md": ["Manrope"],
+                        "headline-lg": ["Manrope"]
+                    },
+                    "fontSize": {
+                        "headline-sm": ["20px", {"lineHeight": "28px", "fontWeight": "600"}],
+                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                        "label-sm": ["12px", {"lineHeight": "16px", "fontWeight": "500"}],
+                        "headline-lg-mobile": ["24px", {"lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                        "body-sm": ["14px", {"lineHeight": "20px", "fontWeight": "400"}],
+                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                        "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                        "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                        "headline-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700"}]
+                    }
+                },
+            },
+        }
+    </script>
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-background text-on-background min-h-screen">
+    <!-- SideNavBar Container -->
+    <div id="sidebar-container"></div>
+    
+    <!-- Main Content Wrapper -->
+    <main class="ml-[280px] min-h-screen flex flex-col">
+        <!-- TopNavBar Container -->
+        <div id="topnav-container"></div>
+        
+        <!-- Edit Ciclo Content -->
+        <div class="pt-32 pb-12 px-container-desktop flex flex-col items-center">
+            <!-- Breadcrumbs -->
+            <div class="w-full max-w-3xl mb-8 flex items-center gap-2 text-on-surface-variant">
+                <span class="text-label-md">Dashboard</span>
+                <span class="material-symbols-outlined text-sm">chevron_right</span>
+                <span class="text-label-md">Ciclos</span>
+                <span class="material-symbols-outlined text-sm">chevron_right</span>
+                <span class="text-label-md text-primary font-bold">Editar Ciclo</span>
+            </div>
+            
+            <!-- Page Header -->
+            <div class="w-full max-w-3xl mb-10">
+                <h1 class="font-headline-lg text-headline-lg text-on-surface mb-2">Editar Ciclo</h1>
+                <p class="font-body-lg text-body-lg text-on-surface-variant">Atualize as informações do ciclo educacional.</p>
+            </div>
+            
+            <!-- Edit Form -->
+            <div class="w-full max-w-3xl glass-card rounded-[24px] overflow-hidden">
+                <div class="p-8 md:p-12">
+                    <form class="space-y-8" onsubmit="event.preventDefault(); window.location.href='ciclos.html';">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                            <!-- Ciclo Name -->
+                            <div class="col-span-2 md:col-span-2">
+                                <label class="block text-label-md text-on-surface-variant mb-2">Nome do Ciclo</label>
+                                <input class="w-full px-4 py-4 rounded-[16px] bg-surface-container-low border-transparent border-2 focus:border-primary-container focus:ring-0 focus:bg-white transition-all text-body-md" type="text" value="1º Ciclo"/>
+                            </div>
+                            
+                            <!-- Acronym -->
+                            <div>
+                                <label class="block text-label-md text-on-surface-variant mb-2">Sigla</label>
+                                <input class="w-full px-4 py-4 rounded-[16px] bg-surface-container-low border-transparent border-2 focus:border-primary-container focus:ring-0 focus:bg-white transition-all text-body-md" type="text" value="1C"/>
+                            </div>
+                            
+                            <!-- Nível de Ensino -->
+                            <div>
+                                <label class="block text-label-md text-on-surface-variant mb-2">Nível de Ensino</label>
+                                <select class="w-full px-4 py-4 rounded-[16px] bg-surface-container-low border-transparent border-2 focus:border-primary-container focus:ring-0 focus:bg-white transition-all text-body-md">
+                                    <option value="">Selecione um nível</option>
+                                    <option value="1" selected>Ensino Básico</option>
+                                    <option value="2">Ensino Secundário</option>
+                                    <option value="3">Ensino Técnico Profissional</option>
+                                    <option value="4">Ensino Superior</option>
+                                </select>
+                            </div>
+                            
+                            <!-- Duration -->
+                            <div>
+                                <label class="block text-label-md text-on-surface-variant mb-2">Duração (Anos)</label>
+                                <div class="relative">
+                                    <input class="w-full px-4 py-4 rounded-[16px] bg-surface-container-low border-transparent border-2 focus:border-primary-container focus:ring-0 focus:bg-white transition-all text-body-md" max="10" min="1" type="number" value="2"/>
+                                    <span class="absolute right-4 top-1/2 -translate-y-1/2 text-on-surface-variant font-body-sm">Anos</span>
+                                </div>
+                            </div>
+                            
+                            <!-- Grade Range -->
+                            <div>
+                                <label class="block text-label-md text-on-surface-variant mb-2">Anos Escolares</label>
+                                <input class="w-full px-4 py-4 rounded-[16px] bg-surface-container-low border-transparent border-2 focus:border-primary-container focus:ring-0 focus:bg-white transition-all text-body-md" type="text" value="1º - 2º"/>
+                            </div>
+                            
+                            <!-- Status -->
+                            <div>
+                                <label class="block text-label-md text-on-surface-variant mb-2">Status</label>
+                                <select class="w-full px-4 py-4 rounded-[16px] bg-surface-container-low border-transparent border-2 focus:border-primary-container focus:ring-0 focus:bg-white transition-all text-body-md">
+                                    <option value="active" selected>Ativo</option>
+                                    <option value="inactive">Inativo</option>
+                                    <option value="draft">Rascunho</option>
+                                </select>
+                            </div>
+                            
+                            <!-- Description -->
+                            <div class="col-span-2">
+                                <label class="block text-label-md text-on-surface-variant mb-2">Descrição</label>
+                                <textarea class="w-full px-4 py-4 rounded-[16px] bg-surface-container-low border-transparent border-2 focus:border-primary-container focus:ring-0 focus:bg-white transition-all text-body-md resize-none" rows="4">Primeiro ciclo do ensino básico, abrangendo os anos 1º e 2º. Foco no desenvolvimento de competências fundamentais.</textarea>
+                            </div>
+                        </div>
+                        
+                        <!-- Divider -->
+                        <div class="h-[1px] bg-outline-variant w-full opacity-30"></div>
+                        
+                        <!-- Form Actions -->
+                        <div class="flex flex-col md:flex-row items-center justify-end gap-4 pt-4">
+                            <a href="ciclos.html" class="px-4 py-2 bg-surface-container-lowest border border-outline-tertiary rounded-lg font-label-sm text-label-sm text-secondary hover:bg-surface-container-high transition-all">
+                                Cancelar
+                            </a>
+                            <button class="px-4 py-2 bg-tertiary text-on-primary rounded-lg font-label-sm text-label-sm hover:opacity-90 transition-all" type="submit">
+                                Atualizar Ciclo
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            
+            <!-- Contextual Information -->
+            <div class="w-full max-w-3xl mt-12 grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="flex items-start gap-4 p-4 rounded-2xl bg-tertiary-container/10">
+                    <span class="material-symbols-outlined text-tertiary">info</span>
+                    <div>
+                        <h4 class="text-label-md text-on-surface">Integridade de Dados</h4>
+                        <p class="text-body-sm text-on-surface-variant">Os ciclos são fundamentais para a organização do ensino por etapas.</p>
+                    </div>
+                </div>
+                <div class="flex items-start gap-4 p-4 rounded-2xl bg-tertiary-container/10">
+                    <span class="material-symbols-outlined text-tertiary">history</span>
+                    <div>
+                        <h4 class="text-label-md text-on-surface">Versionamento</h4>
+                        <p class="text-body-sm text-on-surface-variant">Todas as modificações são registradas para auditoria administrativa.</p>
+                    </div>
+                </div>
+                <div class="flex items-start gap-4 p-4 rounded-2xl bg-tertiary-container/10">
+                    <span class="material-symbols-outlined text-tertiary">layers</span>
+                    <div>
+                        <h4 class="text-label-md text-on-surface">Níveis</h4>
+                        <p class="text-body-sm text-on-surface-variant">Cada ciclo deve estar associado a um nível de ensino correspondente.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const id = urlParams.get('id');
+            if (id) {
+                console.log('Editing cycle with ID:', id);
+            }
+        });
+    </script>
+</body>
+</html>

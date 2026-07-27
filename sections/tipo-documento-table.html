@@ -1,0 +1,132 @@
+<div id="tipo-documento-table-container"
+    class="bg-white rounded-[24px] card-shadow border border-[#f5f0ed] overflow-hidden">
+    <div class="px-8 py-6 border-b border-surface-container-low flex items-center justify-between">
+        <h3 class="text-headline-sm font-headline-sm text-on-surface">Visão geral dos tipos de documento</h3>
+        <div class="flex gap-2">
+            <button
+                class="p-2 rounded-lg border border-outline-variant text-on-surface-variant hover:bg-surface-container-low transition-colors">
+                <span class="material-symbols-outlined">filter_list</span>
+            </button>
+            <button
+                class="p-2 rounded-lg border border-outline-variant text-on-surface-variant hover:bg-surface-container-low transition-colors">
+                <span class="material-symbols-outlined">download</span>
+            </button>
+        </div>
+    </div>
+    <div class="overflow-x-auto">
+        <table class="w-full text-left border-collapse">
+            <thead>
+                <tr class="bg-surface-container-low/50">
+                    <th class="px-8 py-4 text-label-md text-secondary uppercase tracking-wider">Tipo</th>
+                    <th class="px-8 py-4 text-label-md text-secondary uppercase tracking-wider">Sigla</th>
+                    <th class="px-8 py-4 text-label-md text-secondary uppercase tracking-wider">Descrição</th>
+                    <th class="px-8 py-4 text-label-md text-secondary uppercase tracking-wider">Documentos</th>
+                    <th class="px-8 py-4 text-label-md text-secondary uppercase tracking-wider">Status</th>
+                    <th class="px-8 py-4 text-label-md text-secondary uppercase tracking-wider text-right">Ações</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-surface-container-low">
+                <!-- Row 1 - Diploma -->
+                <tr class="hover:bg-surface-container-low/30 transition-colors group">
+                    <td class="px-8 py-5">
+                        <div class="flex items-center gap-3">
+                            <div
+                                class="w-8 h-8 rounded-lg bg-primary-container flex items-center justify-center text-on-primary-container text-xs font-bold">
+                                DIP</div>
+                            <span class="text-body-md font-bold text-on-surface">Diploma</span>
+                        </div>
+                    </td>
+                    <td class="px-8 py-5 text-body-md text-on-surface-variant">DIP</td>
+                    <td class="px-8 py-5 text-body-md text-on-surface-variant">Diploma de conclusão de curso</td>
+                    <td class="px-8 py-5 text-body-md text-on-surface-variant">6,241</td>
+                    <td class="px-8 py-5">
+                        <span
+                            class="inline-flex items-center px-3 py-1 rounded-full text-label-sm font-semibold bg-[#e8f5e9] text-[#2e7d32]">
+                            <span class="material-symbols-outlined text-[14px] mr-1">check_circle</span>
+                            Ativo
+                        </span>
+                    </td>
+                    <td class="px-8 py-5 text-right">
+                        <div
+                            class="flex items-center justify-end gap-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                            <button class="p-2 hover:bg-surface-container rounded-full text-secondary transition-colors"
+                                title="Visualizar Modelo">
+                                <span class="material-symbols-outlined text-[20px]">visibility</span>
+                            </button>
+                            <button onclick="generateSampleCertificate('Diploma')"
+                                class="p-2 hover:bg-surface-container rounded-full text-primary transition-colors"
+                                title="Gerar PDF">
+                                <span class="material-symbols-outlined text-[20px]">picture_as_pdf</span>
+                            </button>
+                            <a href="tipo-documento-edit.html?id=1"
+                                class="p-2 hover:bg-surface-container rounded-full text-primary transition-colors inline-block"
+                                title="Editar">
+                                <span class="material-symbols-outlined text-[20px]">edit</span>
+                            </a>
+                            <button onclick="openDeleteModal(1, 'Diploma')"
+                                class="p-2 hover:bg-error-container hover:text-error rounded-full text-secondary transition-colors"
+                                title="Eliminar">
+                                <span class="material-symbols-outlined text-[20px]">delete</span>
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+                <!-- Row 2 - Certificado -->
+                <tr class="hover:bg-surface-container-low/30 transition-colors group">
+                    <td class="px-8 py-5">
+                        <div class="flex items-center gap-3">
+                            <div
+                                class="w-8 h-8 rounded-lg bg-tertiary-container flex items-center justify-center text-on-tertiary-container text-xs font-bold">
+                                CER</div>
+                            <span class="text-body-md font-bold text-on-surface">Certificado</span>
+                        </div>
+                    </td>
+                    <td class="px-8 py-5 text-body-md text-on-surface-variant">CER</td>
+                    <td class="px-8 py-5 text-body-md text-on-surface-variant">Certificado de conclusão</td>
+                    <td class="px-8 py-5 text-body-md text-on-surface-variant">6,241</td>
+                    <td class="px-8 py-5">
+                        <span
+                            class="inline-flex items-center px-3 py-1 rounded-full text-label-sm font-semibold bg-[#e8f5e9] text-[#2e7d32]">
+                            <span class="material-symbols-outlined text-[14px] mr-1">check_circle</span>
+                            Ativo
+                        </span>
+                    </td>
+                    <td class="px-8 py-5 text-right">
+                        <div
+                            class="flex items-center justify-end gap-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                            <button class="p-2 hover:bg-surface-container rounded-full text-secondary transition-colors"
+                                title="Visualizar Modelo">
+                                <span class="material-symbols-outlined text-[20px]">visibility</span>
+                            </button>
+                            <button class="p-2 hover:bg-surface-container rounded-full text-primary transition-colors"
+                                title="Gerar PDF">
+                                <span class="material-symbols-outlined text-[20px]">picture_as_pdf</span>
+                            </button>
+                            <a href="tipo-documento-edit.html?id=2"
+                                class="p-2 hover:bg-surface-container rounded-full text-primary transition-colors inline-block"
+                                title="Editar">
+                                <span class="material-symbols-outlined text-[20px]">edit</span>
+                            </a>
+                            <button onclick="openDeleteModal(2, 'Certificado')"
+                                class="p-2 hover:bg-error-container hover:text-error rounded-full text-secondary transition-colors"
+                                title="Eliminar">
+                                <span class="material-symbols-outlined text-[20px]">delete</span>
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <!-- Pagination footer -->
+    <div class="px-8 py-4 border-t border-surface-container-low flex items-center justify-between">
+        <p class="text-label-sm text-secondary">A mostrar de 1 até 2 de 2 resultados</p>
+        <div class="flex gap-1">
+            <button class="px-3 py-1 rounded border border-outline-variant text-secondary disabled:opacity-50"
+                disabled>Anterior</button>
+            <button class="px-3 py-1 rounded bg-tertiary text-white font-bold">1</button>
+            <button class="px-3 py-1 rounded border border-outline-variant text-secondary disabled:opacity-50"
+                disabled>Seguinte</button>
+        </div>
+    </div>
+</div>

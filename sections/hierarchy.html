@@ -1,0 +1,132 @@
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter">
+    <!-- Hierarchical View -->
+    <section class="lg:col-span-4 space-y-6">
+        <div class="flex items-center justify-between">
+            <h3 class="font-headline-sm text-headline-sm text-on-surface">Hierarquia Regional</h3>
+            <button class="text-[#667eea] font-label-sm text-label-sm hover:underline">Ver mapa</button>
+        </div>
+        <div class="bg-surface-container-lowest rounded-[24px] card-shadow border border-[#f5efef] overflow-hidden">
+            <div class="p-4 bg-surface-container-low border-b border-outline-variant/30 flex items-center gap-2">
+                <span class="material-symbols-outlined text-secondary">filter_list</span>
+                <span class="font-label-md text-label-md text-secondary">Filtrar por região</span>
+            </div>
+            <div class="divide-y divide-outline-variant/20">
+                <!-- Region Item -->
+                <div class="p-4 hover:bg-surface-container-low transition-colors cursor-pointer group">
+                    <div class="flex items-center justify-between mb-2">
+                        <div class="flex items-center gap-3">
+                            <div class="w-2 h-2 rounded-full bg-primary"></div>
+                            <span class="font-label-md text-label-md text-on-surface">Região de Oio</span>
+                        </div>
+                        <span class="material-symbols-outlined text-secondary group-hover:rotate-90 transition-transform">chevron_right</span>
+                    </div>
+                    <div class="pl-5 space-y-2">
+                        <div class="flex items-center justify-between text-secondary">
+                            <span class="font-body-sm text-body-sm">Sector A (Public)</span>
+                            <span class="font-label-sm text-label-sm px-2 py-0.5 bg-surface-container-high rounded">12 Schools</span>
+                        </div>
+                        <div class="flex items-center justify-between text-secondary">
+                            <span class="font-body-sm text-body-sm">Sector B (Charter)</span>
+                            <span class="font-label-sm text-label-sm px-2 py-0.5 bg-surface-container-high rounded">8 Schools</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Region Item 2 -->
+                <div class="p-4 hover:bg-surface-container-low transition-colors cursor-pointer group">
+                    <div class="flex items-center justify-between mb-2">
+                        <div class="flex items-center gap-3">
+                            <div class="w-2 h-2 rounded-full bg-tertiary"></div>
+                            <span class="font-label-md text-label-md text-on-surface">South Coastal</span>
+                        </div>
+                        <span class="material-symbols-outlined text-secondary group-hover:rotate-90 transition-transform">chevron_right</span>
+                    </div>
+                </div>
+                <!-- Region Item 3 -->
+                <div class="p-4 hover:bg-surface-container-low transition-colors cursor-pointer group">
+                    <div class="flex items-center justify-between mb-2">
+                        <div class="flex items-center gap-3">
+                            <div class="w-2 h-2 rounded-full bg-secondary"></div>
+                            <span class="font-label-md text-label-md text-on-surface">Eastern Valley</span>
+                        </div>
+                        <span class="material-symbols-outlined text-secondary group-hover:rotate-90 transition-transform">chevron_right</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Academic Structure -->
+    <section class="lg:col-span-8 space-y-6">
+        <div class="flex items-center justify-between">
+            <h3 class="font-headline-sm text-headline-sm text-on-surface">Ciclos e níveis académicos</h3>
+            <div class="flex gap-2">
+                <button class="p-2 items-center justify-center rounded-lg bg-tertiary-container/30 text-tertiary" >
+                    <span class="material-symbols-outlined" >grid_view</span>
+                </button>
+                <button class="p-2 rounded-lg hover:bg-surface-container-high text-secondary">
+                    <span class="material-symbols-outlined">format_list_bulleted</span>
+                </button>
+            </div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+            <!-- Cycle: Primary -->
+            <div class="bg-surface-container-lowest rounded-[24px] card-shadow border border-[#f5efef] p-6 space-y-4">
+                <div class="flex items-center justify-between border-b border-outline-variant/30 pb-4">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-[#FFF3E0] text-[#E65100] flex items-center justify-center text-primary">
+                            <span class="material-symbols-outlined">child_care</span>
+                        </div>
+                        <h4 class="font-label-md text-label-md text-on-surface">Ensino Básico</h4>
+                    </div>
+                    <span class="material-symbols-outlined text-secondary cursor-pointer">more_vert</span>
+                </div>
+                <div class="space-y-3">
+                    <div class="p-3 bg-surface-container-low rounded-xl flex items-center justify-between">
+                        <span class="font-body-md text-body-md">Level 1 (Foundation)</span>
+                        <span class="font-label-sm text-label-sm text-secondary">12 Classes</span>
+                    </div>
+                    <div class="p-3 bg-surface-container-low rounded-xl flex items-center justify-between">
+                        <span class="font-body-md text-body-md">Level 2 (Intermediate)</span>
+                        <span class="font-label-sm text-label-sm text-secondary">15 Classes</span>
+                    </div>
+                    <div class="p-3 bg-surface-container-low rounded-xl flex items-center justify-between">
+                        <span class="font-body-md text-body-md">Level 3 (Advanced)</span>
+                        <span class="font-label-sm text-label-sm text-secondary">10 Classes</span>
+                    </div>
+                </div>
+                <button class="w-full py-2 border border-dashed border-outline-variant rounded-xl text-secondary font-label-sm hover:bg-surface-container-low transition-colors">
+                    + Add New Level
+                </button>
+            </div>
+            <!-- Cycle: Secondary -->
+            <div class="bg-surface-container-lowest rounded-[24px] card-shadow border border-[#f5efef] p-6 space-y-4">
+                <div class="flex items-center justify-between border-b border-outline-variant/30 pb-4">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-[#E8EAFF] text-[#0d0cb5] flex items-center justify-center text-tertiary">
+                            <span class="material-symbols-outlined">school</span>
+                        </div>
+                        <h4 class="font-label-md text-label-md text-on-surface">Ensino Secundário</h4>
+                    </div>
+                    <span class="material-symbols-outlined text-secondary cursor-pointer">more_vert</span>
+                </div>
+                <div class="space-y-3">
+                    <div class="p-3 bg-surface-container-low rounded-xl flex items-center justify-between">
+                        <span class="font-body-md text-body-md">Grade 9</span>
+                        <span class="font-label-sm text-label-sm text-secondary">8 Classes</span>
+                    </div>
+                    <div class="p-3 bg-surface-container-low rounded-xl flex items-center justify-between">
+                        <span class="font-body-md text-body-md">Grade 10</span>
+                        <span class="font-label-sm text-label-sm text-secondary">8 Classes</span>
+                    </div>
+                    <div class="p-3 bg-surface-container-low rounded-xl flex items-center justify-between">
+                        <span class="font-body-md text-body-md">Grade 11</span>
+                        <span class="font-label-sm text-label-sm text-secondary">7 Classes</span>
+                    </div>
+                </div>
+                <button class="w-full py-2 border border-dashed border-outline-variant rounded-xl text-secondary font-label-sm hover:bg-surface-container-low transition-colors">
+                    + Add New Level
+                </button>
+            </div>
+        </div>
+    </section>
+</div>

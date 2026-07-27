@@ -1,0 +1,266 @@
+<div id="folha-table-container" class="bg-white rounded-[24px] card-shadow border border-[#f5f0ed] overflow-hidden">
+    <div class="px-8 py-6 border-b border-surface-container-low flex items-center justify-between">
+        <h3 class="text-headline-sm font-headline-sm text-on-surface">Visão geral das folhas</h3>
+        <div class="flex gap-2">
+            <button
+                class="p-2 rounded-lg border border-outline-variant text-on-surface-variant hover:bg-surface-container-low transition-colors">
+                <span class="material-symbols-outlined">filter_list</span>
+            </button>
+            <button
+                class="p-2 rounded-lg border border-outline-variant text-on-surface-variant hover:bg-surface-container-low transition-colors">
+                <span class="material-symbols-outlined">download</span>
+            </button>
+        </div>
+    </div>
+    <div class="overflow-x-auto">
+        <table class="w-full text-left border-collapse">
+            <thead>
+                <tr class="bg-surface-container-low/50">
+                    <th class="px-8 py-4 text-label-md text-secondary uppercase tracking-wider">Nº Folha</th>
+                    <th class="px-8 py-4 text-label-md text-secondary uppercase tracking-wider">Aluno</th>
+                    <th class="px-8 py-4 text-label-md text-secondary uppercase tracking-wider">Nº Processo</th>
+                    <th class="px-8 py-4 text-label-md text-secondary uppercase tracking-wider">Livro</th>
+                    <th class="px-8 py-4 text-label-md text-secondary uppercase tracking-wider">Média</th>
+                    <th class="px-8 py-4 text-label-md text-secondary uppercase tracking-wider">Status</th>
+                    <th class="px-8 py-4 text-label-md text-secondary uppercase tracking-wider text-right">Ações</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-surface-container-low">
+                <!-- Row 1 -->
+                <tr class="hover:bg-surface-container-low/30 transition-colors group">
+                    <td class="px-8 py-5">
+                        <div class="flex items-center gap-3">
+                            <div
+                                class="w-8 h-8 rounded-lg bg-primary-container flex items-center justify-center text-on-primary-container text-xs font-bold">
+                                F001</div>
+                            <span class="text-body-md font-bold text-on-surface">Folha 001</span>
+                        </div>
+                    </td>
+                    <td class="px-8 py-5 text-body-md text-on-surface-variant">João Silva</td>
+                    <td class="px-8 py-5 text-body-md text-on-surface-variant">#2024-00124</td>
+                    <td class="px-8 py-5 text-body-md text-on-surface-variant">Livro 001/2024</td>
+                    <td class="px-8 py-5 text-body-md text-on-surface-variant font-bold text-primary">16.5</td>
+                    <td class="px-8 py-5">
+                        <span
+                            class="inline-flex items-center px-3 py-1 rounded-full text-label-sm font-semibold bg-[#e8f5e9] text-[#2e7d32]">
+                            <span class="material-symbols-outlined text-[14px] mr-1">check_circle</span>
+                            Validada
+                        </span>
+                    </td>
+                    <td class="px-8 py-5 text-right">
+                        <div
+                            class="flex items-center justify-end gap-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                            <!-- View Button -->
+                            <button class="p-2 hover:bg-surface-container rounded-full text-secondary transition-colors"
+                                title="Visualizar">
+                                <span class="material-symbols-outlined text-[20px]">visibility</span>
+                            </button>
+                            <!-- Edit Button -->
+                            <a href="folha-edit.html?id=1"
+                                class="p-2 hover:bg-surface-container rounded-full text-primary transition-colors inline-block"
+                                title="Editar">
+                                <span class="material-symbols-outlined text-[20px]">edit</span>
+                            </a>
+                            <!-- Generate Diploma PDF -->
+                            <button
+                                onclick='generateCertificateForStudent(1, "João Silva", "#2024-00124", "Escola Básica do Norte", "North Metropolitan", "Setor A (Público)", "2024/2025", "1º Ano", "16.5", "30/06/2025", [{"name":"Português","grade":"16"},{"name":"Matemática","grade":"17"},{"name":"Estudo do Meio","grade":"15"}], "Diploma")'
+                                class="p-2 hover:bg-surface-container rounded-full text-tertiary transition-colors"
+                                title="Gerar Diploma">
+                                <span class="material-symbols-outlined text-[20px]">description</span>
+                            </button>
+                            <!-- Generate Certificado PDF -->
+                            <button
+                                onclick='generateCertificateForStudent(1, "João Silva", "#2024-00124", "Escola Básica do Norte", "North Metropolitan", "Setor A (Público)", "2024/2025", "1º Ano", "16.5", "30/06/2025", [{"name":"Português","grade":"16"},{"name":"Matemática","grade":"17"},{"name":"Estudo do Meio","grade":"15"}], "Certificado")'
+                                class="p-2 hover:bg-surface-container rounded-full text-primary transition-colors"
+                                title="Gerar Certificado">
+                                <span class="material-symbols-outlined text-[20px]">picture_as_pdf</span>
+                            </button>
+                            <!-- Delete Button -->
+                            <button onclick="openDeleteModal(1, 'Folha 001')"
+                                class="p-2 hover:bg-error-container hover:text-error rounded-full text-secondary transition-colors"
+                                title="Eliminar">
+                                <span class="material-symbols-outlined text-[20px]">delete</span>
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+                <!-- Row 2 -->
+                <tr class="hover:bg-surface-container-low/30 transition-colors group">
+                    <td class="px-8 py-5">
+                        <div class="flex items-center gap-3">
+                            <div
+                                class="w-8 h-8 rounded-lg bg-tertiary-container flex items-center justify-center text-on-tertiary-container text-xs font-bold">
+                                F002</div>
+                            <span class="text-body-md font-bold text-on-surface">Folha 002</span>
+                        </div>
+                    </td>
+                    <td class="px-8 py-5 text-body-md text-on-surface-variant">Maria Costa</td>
+                    <td class="px-8 py-5 text-body-md text-on-surface-variant">#2024-00156</td>
+                    <td class="px-8 py-5 text-body-md text-on-surface-variant">Livro 001/2024</td>
+                    <td class="px-8 py-5 text-body-md text-on-surface-variant font-bold text-primary">17.2</td>
+                    <td class="px-8 py-5">
+                        <span
+                            class="inline-flex items-center px-3 py-1 rounded-full text-label-sm font-semibold bg-[#e8f5e9] text-[#2e7d32]">
+                            <span class="material-symbols-outlined text-[14px] mr-1">check_circle</span>
+                            Validada
+                        </span>
+                    </td>
+                    <td class="px-8 py-5 text-right">
+                        <div
+                            class="flex items-center justify-end gap-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                            <button class="p-2 hover:bg-surface-container rounded-full text-secondary transition-colors"
+                                title="Visualizar">
+                                <span class="material-symbols-outlined text-[20px]">visibility</span>
+                            </button>
+                            <a href="folha-edit.html?id=2"
+                                class="p-2 hover:bg-surface-container rounded-full text-primary transition-colors inline-block"
+                                title="Editar">
+                                <span class="material-symbols-outlined text-[20px]">edit</span>
+                            </a>
+                            <button
+                                onclick='generateCertificateForStudent(2, "Maria Costa", "#2024-00156", "Escola Básica do Norte", "North Metropolitan", "Setor A (Público)", "2024/2025", "1º Ano", "17.2", "30/06/2025", [{"name":"Português","grade":"18"},{"name":"Matemática","grade":"17"},{"name":"Estudo do Meio","grade":"16"}], "Diploma")'
+                                class="p-2 hover:bg-surface-container rounded-full text-tertiary transition-colors"
+                                title="Gerar Diploma">
+                                <span class="material-symbols-outlined text-[20px]">description</span>
+                            </button>
+                            <button
+                                onclick='generateCertificateForStudent(2, "Maria Costa", "#2024-00156", "Escola Básica do Norte", "North Metropolitan", "Setor A (Público)", "2024/2025", "1º Ano", "17.2", "30/06/2025", [{"name":"Português","grade":"18"},{"name":"Matemática","grade":"17"},{"name":"Estudo do Meio","grade":"16"}], "Certificado")'
+                                class="p-2 hover:bg-surface-container rounded-full text-primary transition-colors"
+                                title="Gerar Certificado">
+                                <span class="material-symbols-outlined text-[20px]">picture_as_pdf</span>
+                            </button>
+                            <button onclick="openDeleteModal(2, 'Folha 002')"
+                                class="p-2 hover:bg-error-container hover:text-error rounded-full text-secondary transition-colors"
+                                title="Eliminar">
+                                <span class="material-symbols-outlined text-[20px]">delete</span>
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+                <!-- Row 3 -->
+                <tr class="hover:bg-surface-container-low/30 transition-colors group">
+                    <td class="px-8 py-5">
+                        <div class="flex items-center gap-3">
+                            <div
+                                class="w-8 h-8 rounded-lg bg-secondary-container flex items-center justify-center text-on-secondary-container text-xs font-bold">
+                                F003</div>
+                            <span class="text-body-md font-bold text-on-surface">Folha 003</span>
+                        </div>
+                    </td>
+                    <td class="px-8 py-5 text-body-md text-on-surface-variant">Pedro Fernandes</td>
+                    <td class="px-8 py-5 text-body-md text-on-surface-variant">#2024-00189</td>
+                    <td class="px-8 py-5 text-body-md text-on-surface-variant">Livro 001/2024</td>
+                    <td class="px-8 py-5 text-body-md text-on-surface-variant font-bold text-primary">14.8</td>
+                    <td class="px-8 py-5">
+                        <span
+                            class="inline-flex items-center px-3 py-1 rounded-full text-label-sm font-semibold bg-[#fff3e0] text-[#ef6c00]">
+                            <span class="material-symbols-outlined text-[14px] mr-1">pause_circle</span>
+                            Pendente
+                        </span>
+                    </td>
+                    <td class="px-8 py-5 text-right">
+                        <div
+                            class="flex items-center justify-end gap-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                            <button class="p-2 hover:bg-surface-container rounded-full text-secondary transition-colors"
+                                title="Visualizar">
+                                <span class="material-symbols-outlined text-[20px]">visibility</span>
+                            </button>
+                            <a href="folha-edit.html?id=3"
+                                class="p-2 hover:bg-surface-container rounded-full text-primary transition-colors inline-block"
+                                title="Editar">
+                                <span class="material-symbols-outlined text-[20px]">edit</span>
+                            </a>
+                            <button
+                                onclick='generateCertificateForStudent(3, "Pedro Fernandes", "#2024-00189", "Escola Básica do Norte", "North Metropolitan", "Setor A (Público)", "2024/2025", "1º Ano", "14.8", "30/06/2025", [{"name":"Português","grade":"15"},{"name":"Matemática","grade":"14"},{"name":"Estudo do Meio","grade":"15"}], "Diploma")'
+                                class="p-2 hover:bg-surface-container rounded-full text-tertiary transition-colors"
+                                title="Gerar Diploma">
+                                <span class="material-symbols-outlined text-[20px]">description</span>
+                            </button>
+                            <button
+                                onclick='generateCertificateForStudent(3, "Pedro Fernandes", "#2024-00189", "Escola Básica do Norte", "North Metropolitan", "Setor A (Público)", "2024/2025", "1º Ano", "14.8", "30/06/2025", [{"name":"Português","grade":"15"},{"name":"Matemática","grade":"14"},{"name":"Estudo do Meio","grade":"15"}], "Certificado")'
+                                class="p-2 hover:bg-surface-container rounded-full text-primary transition-colors"
+                                title="Gerar Certificado">
+                                <span class="material-symbols-outlined text-[20px]">picture_as_pdf</span>
+                            </button>
+                            <button onclick="openDeleteModal(3, 'Folha 003')"
+                                class="p-2 hover:bg-error-container hover:text-error rounded-full text-secondary transition-colors"
+                                title="Eliminar">
+                                <span class="material-symbols-outlined text-[20px]">delete</span>
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+                <!-- Row 4 -->
+                <tr class="hover:bg-surface-container-low/30 transition-colors group">
+                    <td class="px-8 py-5">
+                        <div class="flex items-center gap-3">
+                            <div
+                                class="w-8 h-8 rounded-lg bg-[#d0d0fb] flex items-center justify-center text-tertiary text-xs font-bold">
+                                F004</div>
+                            <span class="text-body-md font-bold text-on-surface">Folha 004</span>
+                        </div>
+                    </td>
+                    <td class="px-8 py-5 text-body-md text-on-surface-variant">Ana Santos</td>
+                    <td class="px-8 py-5 text-body-md text-on-surface-variant">#2024-00201</td>
+                    <td class="px-8 py-5 text-body-md text-on-surface-variant">Livro 002/2024</td>
+                    <td class="px-8 py-5 text-body-md text-on-surface-variant font-bold text-primary">12.0</td>
+                    <td class="px-8 py-5">
+                        <span
+                            class="inline-flex items-center px-3 py-1 rounded-full text-label-sm font-semibold bg-[#ffebee] text-error">
+                            <span class="material-symbols-outlined text-[14px] mr-1">cancel</span>
+                            Rejeitada
+                        </span>
+                    </td>
+                    <!-- In the actions column, replace with these buttons -->
+                    <td class="px-8 py-5 text-right">
+                        <div
+                            class="flex items-center justify-end gap-1 opacity-0 group-hover:opacity-100 transition-opacity">
+                            <!-- View Button -->
+                            <button class="p-2 hover:bg-surface-container rounded-full text-secondary transition-colors"
+                                title="Visualizar">
+                                <span class="material-symbols-outlined text-[20px]">visibility</span>
+                            </button>
+                            <!-- Edit Button -->
+                            <a href="folha-edit.html?id=1"
+                                class="p-2 hover:bg-surface-container rounded-full text-primary transition-colors inline-block"
+                                title="Editar">
+                                <span class="material-symbols-outlined text-[20px]">edit</span>
+                            </a>
+                            <!-- Generate Diploma PDF -->
+                            <button
+                                onclick='generateCertificateForStudent(1, "João Silva", "#2024-00124", "Escola Básica do Norte", "North Metropolitan", "Setor A (Público)", "2024/2025", "1º Ano", "16.5", "30/06/2025", [{"name":"Português","grade":"16"},{"name":"Matemática","grade":"17"},{"name":"Estudo do Meio","grade":"15"}], "Diploma")'
+                                class="p-2 hover:bg-surface-container rounded-full text-tertiary transition-colors"
+                                title="Gerar Diploma">
+                                <span class="material-symbols-outlined text-[20px]">description</span>
+                            </button>
+                            <!-- Generate Certificado PDF -->
+                            <button
+                                onclick='generateCertificateForStudent(1, "João Silva", "#2024-00124", "Escola Básica do Norte", "North Metropolitan", "Setor A (Público)", "2024/2025", "1º Ano", "16.5", "30/06/2025", [{"name":"Português","grade":"16"},{"name":"Matemática","grade":"17"},{"name":"Estudo do Meio","grade":"15"}], "Certificado")'
+                                class="p-2 hover:bg-surface-container rounded-full text-primary transition-colors"
+                                title="Gerar Certificado">
+                                <span class="material-symbols-outlined text-[20px]">picture_as_pdf</span>
+                            </button>
+                            <!-- Delete Button -->
+                            <button onclick="openDeleteModal(1, 'Folha 001')"
+                                class="p-2 hover:bg-error-container hover:text-error rounded-full text-secondary transition-colors"
+                                title="Eliminar">
+                                <span class="material-symbols-outlined text-[20px]">delete</span>
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <!-- Pagination footer -->
+    <div class="px-8 py-4 border-t border-surface-container-low flex items-center justify-between">
+        <p class="text-label-sm text-secondary">A mostrar de 1 até 4 de 12,482 resultados</p>
+        <div class="flex gap-1">
+            <button class="px-3 py-1 rounded border border-outline-variant text-secondary disabled:opacity-50"
+                disabled>Anterior</button>
+            <button class="px-3 py-1 rounded bg-tertiary text-white font-bold">1</button>
+            <button class="px-3 py-1 rounded border border-outline-variant text-secondary">2</button>
+            <button class="px-3 py-1 rounded border border-outline-variant text-secondary">Seguinte</button>
+        </div>
+    </div>
+</div>
