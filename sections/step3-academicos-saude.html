@@ -1,0 +1,144 @@
+<div class="flex flex-col gap-4">
+    <!-- 4. DADOS ACADÉMICOS -->
+    <div
+        class="bg-surface-container-lowest rounded-xl shadow-[0px_4px_20px_rgba(0,0,0,0.04)] border border-outline-variant/30 overflow-hidden">
+        <div class="px-4 py-2.5 border-b border-surface-container-high bg-surface-container-low/50">
+            <h3 class="text-sm font-bold text-[#667eea]">4. DADOS ACADÉMICOS</h3>
+        </div>
+        <div class="p-4 space-y-4">
+            <div class="flex items-end flex-wrap gap-1">
+                <span class="text-xs text-on-surface-variant">Pretende matricular-se no:</span>
+                <input type="text"
+                    class="w-12 h-8 bg-surface rounded-md border-0 px-2 text-sm text-center focus:outline-none focus:ring-2 focus:ring-[#667eea] transition-all" />
+                <span class="text-xs text-on-surface-variant ml-1">.º ano de escolaridade</span>
+            </div>
+            <div class="flex items-end flex-wrap gap-1">
+                <span class="text-xs text-on-surface-variant">No ano letivo anterior</span>
+                <input type="text"
+                    class="w-12 h-8 bg-surface rounded-md border-0 px-2 text-sm text-center focus:outline-none focus:ring-2 focus:ring-[#667eea] transition-all" />
+                <span class="text-xs text-on-surface-variant">/</span>
+                <input type="text"
+                    class="w-12 h-8 bg-surface rounded-md border-0 px-2 text-sm text-center focus:outline-none focus:ring-2 focus:ring-[#667eea] transition-all" />
+                <span class="text-xs text-on-surface-variant">frequentou a escola:</span>
+                <input type="text"
+                    class="flex-1 h-8 bg-surface rounded-md border-0 px-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#667eea] transition-all"
+                    placeholder="Nome da escola" />
+
+            </div>
+            <div class="flex items-end flex-wrap gap-1">
+                <span class="text-xs text-on-surface-variant">onde tinha o n.º</span>
+                <input type="text"
+                    class="w-12 h-8 bg-surface rounded-md border-0 px-2 text-sm text-center focus:outline-none focus:ring-2 focus:ring-[#667eea] transition-all" />
+                <span class="text-xs text-on-surface-variant">da turma do</span>
+                <input type="text"
+                    class="w-12 h-8 bg-surface rounded-md border-0 px-2 text-sm text-center focus:outline-none focus:ring-2 focus:ring-[#667eea] transition-all" />
+                <span class="text-xs text-on-surface-variant">.º ano de escolaridade</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- 5. SITUAÇÃO ESCOLAR E DE SAÚDE -->
+    <div
+        class="bg-surface-container-lowest rounded-xl shadow-[0px_4px_20px_rgba(0,0,0,0.04)] border border-outline-variant/30 overflow-hidden">
+        <div class="px-4 py-2.5 border-b border-surface-container-high bg-surface-container-low/50">
+            <h3 class="text-sm font-bold text-[#667eea]">5. SITUAÇÃO ESCOLAR E DE SAÚDE</h3>
+        </div>
+        <div class="p-4">
+            <!-- Linha 1: Período e Repetência -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 pb-4 border-b border-outline-variant/30">
+                <!-- Período -->
+                <div class="flex items-center flex-wrap gap-2">
+                    <span class="text-xs text-on-surface-variant font-medium">Período:</span>
+                    <label class="flex items-center gap-1.5 text-xs text-on-surface-variant cursor-pointer">
+                        <input type="checkbox"
+                            class="w-3.5 h-3.5 rounded text-[#667eea] focus:ring-[#667eea] focus:ring-1" /> Manhã
+                    </label>
+                    <label class="flex items-center gap-1.5 text-xs text-on-surface-variant cursor-pointer">
+                        <input type="checkbox"
+                            class="w-3.5 h-3.5 rounded text-[#667eea] focus:ring-[#667eea] focus:ring-1" /> Tarde
+                    </label>
+                </div>
+                <!-- Repetência -->
+                <div class="flex items-center flex-wrap gap-2">
+                    <span class="text-xs text-on-surface-variant font-medium">Repetiu o ano?</span>
+                    <label class="flex items-center gap-1.5 text-xs text-on-surface-variant cursor-pointer">
+                        <input type="checkbox"
+                            class="w-3.5 h-3.5 rounded text-[#667eea] focus:ring-[#667eea] focus:ring-1" /> Sim
+                    </label>
+                    <label class="flex items-center gap-1.5 text-xs text-on-surface-variant cursor-pointer">
+                        <input type="checkbox"
+                            class="w-3.5 h-3.5 rounded text-[#667eea] focus:ring-[#667eea] focus:ring-1" /> Não
+                    </label>
+                </div>
+            </div>
+
+            <!-- Linha 2: Deficiência -->
+            <div class="py-4 border-b border-outline-variant/30">
+                <div class="flex items-center flex-wrap gap-3 mb-3">
+                    <span class="text-xs text-on-surface-variant font-medium">Portador(a) de deficiência?</span>
+                    <label class="flex items-center gap-1.5 text-xs text-on-surface-variant cursor-pointer">
+                        <input type="checkbox"
+                            class="w-3.5 h-3.5 rounded text-[#667eea] focus:ring-[#667eea] focus:ring-1" /> Sim
+                    </label>
+                    <label class="flex items-center gap-1.5 text-xs text-on-surface-variant cursor-pointer">
+                        <input type="checkbox"
+                            class="w-3.5 h-3.5 rounded text-[#667eea] focus:ring-[#667eea] focus:ring-1" /> Não
+                    </label>
+                </div>
+                <div class="flex items-center gap-3 flex-wrap">
+                    <span class="text-xs text-on-surface-variant font-medium">Tipo:</span>
+                    <div class="flex flex-wrap items-center gap-2">
+                        <label class="flex items-center gap-1.5 text-xs text-on-surface-variant cursor-pointer">
+                            <input type="checkbox"
+                                class="w-3.5 h-3.5 rounded text-[#667eea] focus:ring-[#667eea] focus:ring-1" /> Física
+                        </label>
+                        <label class="flex items-center gap-1.5 text-xs text-on-surface-variant cursor-pointer">
+                            <input type="checkbox"
+                                class="w-3.5 h-3.5 rounded text-[#667eea] focus:ring-[#667eea] focus:ring-1" /> Visual
+                        </label>
+                        <label class="flex items-center gap-1.5 text-xs text-on-surface-variant cursor-pointer">
+                            <input type="checkbox"
+                                class="w-3.5 h-3.5 rounded text-[#667eea] focus:ring-[#667eea] focus:ring-1" /> Auditiva
+                        </label>
+                        <label class="flex items-center gap-1.5 text-xs text-on-surface-variant cursor-pointer">
+                            <input type="checkbox"
+                                class="w-3.5 h-3.5 rounded text-[#667eea] focus:ring-[#667eea] focus:ring-1" />
+                            Intelectual
+                        </label>
+                        <label class="flex items-center gap-1.5 text-xs text-on-surface-variant cursor-pointer">
+                            <input type="checkbox"
+                                class="w-3.5 h-3.5 rounded text-[#667eea] focus:ring-[#667eea] focus:ring-1" /> Outra
+                        </label>
+                        <div class="flex items-center gap-1">
+                            <span class="text-xs text-on-surface-variant">Qual?</span>
+                            <input type="text"
+                                class="w-24 h-8 bg-surface rounded-md border-0 px-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#667eea] transition-all"
+                                placeholder="Especifique" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Linha 3: Doença -->
+            <div class="pt-4">
+                <div class="flex items-center flex-wrap gap-3 mb-3">
+                    <span class="text-xs text-on-surface-variant font-medium">Portador(a) de alguma doença?</span>
+                    <label class="flex items-center gap-1.5 text-xs text-on-surface-variant cursor-pointer">
+                        <input type="checkbox"
+                            class="w-3.5 h-3.5 rounded text-[#667eea] focus:ring-[#667eea] focus:ring-1" /> Sim
+                    </label>
+                    <label class="flex items-center gap-1.5 text-xs text-on-surface-variant cursor-pointer">
+                        <input type="checkbox"
+                            class="w-3.5 h-3.5 rounded text-[#667eea] focus:ring-[#667eea] focus:ring-1" /> Não
+                    </label>
+                </div>
+                <div class="flex items-center gap-2">
+                    <span class="text-xs text-on-surface-variant">Qual?</span>
+                    <input type="text"
+                        class="flex-1 h-8 bg-surface rounded-md border-0 px-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#667eea] transition-all"
+                        placeholder="Especifique a doença" />
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
